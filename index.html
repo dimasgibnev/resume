@@ -6,81 +6,99 @@
     <meta name="keywords" content="Резюме, cv.">
     <meta name="description" content="Это сайт - резюме Дмитрия Сгибнева">
     <title>Резюме Дмитрий Сгибнев</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fonts.css">
 </head>
-<body>
-    <h1>Сгибнев Дмитрий</h1>
+<body > 
+    <div class="container">
 
-    <img src="https://sun9-10.userapi.com/impf/c639329/v639329549/4f6c5/1mcH-47Hlm0.jpg?size=1080x1920&quality=96&sign=005ef90ca657fc6778fb95f548cc903f&type=album" src="imgs/myphoto.jpg" alt="моё фото" width="200">
+        <div class="info card">
+            
+                <div>
+                    <img src="https://sun9-10.userapi.com/impf/c639329/v639329549/4f6c5/1mcH-47Hlm0.jpg?size=1080x1920&quality=96&sign=005ef90ca657fc6778fb95f548cc903f&type=album" src="images/myphoto.jpg" alt="моё фото" class="avatar">
+                </div>
 
+            <div class="info-text ">
+                <h1>Сгибнев Дмитрий</h1>
+                <p><strong>Я студент Result School</strong>, на курсе Джуниор Frontend-разработчик. <br><em>В будущем планирую пойти учиться на инженера-электронщика в ТУСУР.</em></p>
 
-    <p><strong>Я студент Result School</strong>, на курсе Джуниор Frontend-разработчик. <br><em>В будущем планирую пойти учиться на инженера-электронщика в ТУСУР.</em></p>
+                <p><em><strong>Я люблю учиться</strong>, водить машину, слушать старую музыку рокового направления, паять.</em></p>
+          
+                
+                    <h4>Мои соцсети:</h4>
+                    <a class="link1" href="https://vk.com/dimasgbn" target="_blank"><strong>VK</strong></a>
+                    |
+                    <a class="link2" href="https://t.me/Rakamor42" target="_blank"><strong>Telegram</strong></a>
+                
+            </div>
+        </div>
+                <div class="card">           
+                    <h4>Мои хобби</h4>
+                    <ul>
+                        <li>Электроника.</li>
+                        <li>Пайка.</li>
+                        <li>Музыка.</li>
+                    </ul>
+                </div>
 
-    <p><em><strong>Я люблю учиться</strong>, водить машину, слушать старую музыку рокового направления, паять.</em></p>
+        <div   class="card">
+                            
+            <h4> Опыт работы</h4>
 
-    <h5>Мои соцсети:</h5>
-    <a href="https://vk.com/dimasgbn" target="_blank"><strong>VK</strong></a>
-    |
-    <a href="https://t.me/Rakamor42" target="_blank"><strong>Telegram</strong></a>
+            <table class="table">
+           
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Трэвэлерс Кофе</td>
+                        <td>Официант</td>
+                        <td>2012-2013</td>
+                    </tr>
+                    <tr>
+                        <td>Такси "Максим"</td>
+                        <td>Водитель</td>
+                        <td>2015-2016</td>
+                    </tr>
+                    <tr>
+                        <td>Зеленый мыс</td>
+                        <td>Оператор котельной</td>
+                        <td>2016-сейчас</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <h2>Мои хобби:</h2>
+        <div>
+            <div class="contact card">
+        <h4>Связаться со мной:</h4>
+            <form >
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" placeholder="Введите Ваше имя...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email</label>
+                        <input type="email" id="email" placeholder="Введите email...">
+                    </div>
+                 </div>
+                 <div class="form-group">
+                    <label for="message">Ваше сообщение</label>
+                    <textarea id="message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+                </div>
+                
 
-    <ul>
-        <li>Электроника, пайка.</li>
-        <li>Музыка.</li>
-
-    </ul>
-
-    <h2>Опыт работы.</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Трэвэлерс Кофе</td>
-                <td>Официант</td>
-                <td>2012-2013</td>
-            </tr>
-            <tr>
-                <td>Такси "Максим"</td>
-                <td>Водитель</td>
-                <td>2015-2016</td>
-            </tr>
-            <tr>
-                <td>Зеленый мыс</td>
-                <td>Оператор котельной</td>
-                <td>2016-сейчас</td>
-            </tr>
-        </tbody>
-    </table>
-<br>
-<h2>Связаться со мной</h2>
-
-<form action="">
-
-    <div>
-        <label for="text">Ваше имя:</label>
-        <input type="text" id="text" placeholder="Введите имя">
+                <input class="btn" type="submit" value="Связаться!">
+            </form>
+        </div>
+        </div>
     </div>
-
-    <div>
-        <label for="email">Ваш Email:</label>
-        <input type="email" id="email" placeholder="Введите email">
-    </div>
-
-    <div>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea name="" id="message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
-    </div>
-
-   <button type="submit">Отправить!</button>
-</form>
-
 </body>
 
 </html>
